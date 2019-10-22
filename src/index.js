@@ -19,7 +19,7 @@ class ThreeBoxBot {
   /**
    * @param {Object} fieldsNValuesObj an object { field1: value } to set in the new 3box
    *
-   * @returns {Obj} an object { ethAddress: 3boxInstance }
+   * @returns {Array} [ ethereumAddress, 3boxInstance ]
    */
   async createProfile(fieldsNValuesObj) {
     const accounts = await this.web3.eth.getAccounts()
@@ -41,7 +41,7 @@ class ThreeBoxBot {
     )
 
     await box.public.setMultiple(fields, values)
-    return { ethAddress: box }
+    return [this.accountCounter - 1, box]
   }
 
   async returnAddressWithNoProfile() {

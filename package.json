@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "./node_modules/.bin/babel src --out-dir dist",
-    "createBoxWithName": "npm run build && node dist/index.js",
+    "createBoxWithName": "npm run build && node dist/scripts/createBoxWithName.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
