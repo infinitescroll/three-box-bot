@@ -9,7 +9,7 @@ class ThreeBoxBot {
     this.web3 = new Web3(
       new HDWalletProvider(
         Wallet.createRandom().mnemonic,
-        'https://rinkeby.infura.io/v3/87f3c8e1836c442d87583ee9a4f3053a',
+        'http://rinkeby.infura.io/v3/87f3c8e1836c442d87583ee9a4f3053a',
         0,
         10
       )

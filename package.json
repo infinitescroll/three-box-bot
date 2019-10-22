@@ -32,7 +32,8 @@
     "@babel/polyfill": "^7.6.0",
     "@babel/runtime": "^7.6.3",
     "@truffle/hdwallet-provider": "^1.0.21",
-    "ethers": "^4.0.37"
+    "ethers": "^4.0.37",
+    "web3": "^1.2.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
