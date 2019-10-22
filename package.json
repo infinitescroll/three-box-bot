@@ -1,0 +1,41 @@
+{
+  "name": "programmatic-3box-creation",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src --out-dir dist",
+    "createBoxWithName": "npm run build && node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "3box",
+    "ethereum",
+    "ipfs",
+    "blockchain",
+    "web3",
+    "ethers.js"
+  ],
+  "author": "Open Work Labs",
+  "license": "ISC",
+  "dependencies": {
+    "3box": "^1.13.0",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/runtime": "^7.6.3",
+    "@truffle/hdwallet-provider": "^1.0.21",
+    "ethers": "^4.0.37"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "eslint": "^6.3.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-jest": "^22.17.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2"
+  }
+}
