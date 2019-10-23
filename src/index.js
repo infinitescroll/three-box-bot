@@ -5,14 +5,9 @@ const HDWalletProvider = require('@truffle/hdwallet-provider')
 const Box = require('3box')
 
 class ThreeBoxBot {
-  constructor() {
+  constructor(providerUrl) {
     this.web3 = new Web3(
-      new HDWalletProvider(
-        Wallet.createRandom().mnemonic,
-        'http://rinkeby.infura.io/v3/87f3c8e1836c442d87583ee9a4f3053a',
-        0,
-        10
-      )
+      new HDWalletProvider(Wallet.createRandom().mnemonic, providerUrl, 0, 10)
     )
     this.accountCounter = 0
   }
@@ -41,7 +36,7 @@ class ThreeBoxBot {
     )
 
     await box.public.setMultiple(fields, values)
-    return [this.accountCounter - 1, box]
+    return [accounts[this.accountCounter - 1], box]
   }
 
   async returnAddressWithNoProfile() {
