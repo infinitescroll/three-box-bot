@@ -1,4 +1,4 @@
-This package is used in aragon test suites, but could be used for other purposes too.
+This package is used for [Aragon test suites](https://github.com/aragon/aragon.js/blob/0dc5416381e091bc86cc9576506c47063d1583e3/packages/aragon-wrapper/src/identity/ThreeBoxProvider.test.js#L2), but could be used for other purposes too.
 
 It's bundled for a node.js environment only.
 
