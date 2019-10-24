@@ -1,6 +1,6 @@
 {
   "name": "@openworklabs/three-box-bot",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "a node module for creating 3box profiles programmatically",
   "repository": {
     "type": "git",
